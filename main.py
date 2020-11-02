@@ -6,6 +6,8 @@ x = np.array([[0, 0], [3, 8], [2, 2], [1, 1], [5, 3], [4, 8], [6, 3], [5, 4], [6
 
 class KMeans(object):
     def __init__(self, k=3, tolerance=0.0001, max_iter=100):
+        self.__a = "a"
+        self._b = "b"
         self.clf_ = {}
         self.centers_ = {}
         self.k_ = k
