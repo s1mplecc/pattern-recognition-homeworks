@@ -1,7 +1,3 @@
-# 试用K均值法对如下模式分布进行聚类分析。
-# ｛ x1（0, 0）, x2（3, 8）, x3（2, 2）, x4（1, 1）, x5（5, 3）,
-# x6（4, 8）, x7（6, 3）, x8（5, 4）, x9（6, 4）, x10（7, 5）｝
-
 import numpy as np
 from matplotlib import pyplot
 
@@ -36,6 +32,10 @@ class KMeans(object):
 
 
 if __name__ == '__main__':
+    # 试用K均值法对如下模式分布进行聚类分析。
+    # ｛ x1（0, 0）, x2（3, 8）, x3（2, 2）, x4（1, 1）, x5（5, 3）,
+    # x6（4, 8）, x7（6, 3）, x8（5, 4）, x9（6, 4）, x10（7, 5）｝
+
     k_means = KMeans(k=3)
     k_means.fit(x)
     for center in k_means.centers:
